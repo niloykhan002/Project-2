@@ -40,6 +40,7 @@ main{
 }
 .primary-desc{
     font-size: 0.8rem;
+    line-height: 24px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -265,5 +266,52 @@ header{
     gap: 20px;
 }
 
+/* Footer section styles */
+
+footer{
+    margin-top: 88px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-details h1{
+    font-size: 4.3rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-bottom: 20px;
+    
+}
+.contact h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.contact p{
+    font-size: 1.4rem;
+    color: var(--primary-color-2);
+    margin-top: 20px;
+}
+.footer-items{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 176px;
+    padding-top: 66px;
+    padding-bottom: 79px;
+    
+}
+hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-items h4{
+        font-size: 1.25rem;
+        color: var(--primary-color-2);
+        text-align: center;
+        padding: 35px 0;
+}
 
 
