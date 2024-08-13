@@ -53,6 +53,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
+    align-items: center;
 }
 .nav-bar h3{
     font-size: 2.25rem;
@@ -78,6 +79,11 @@ header{
     background-color: var(--secondary-color);
     padding: 8px 20px;
     border-radius: 46px;
+}
+.fa-solid{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    display: none;
 }
 
 /* Banner Styles */
