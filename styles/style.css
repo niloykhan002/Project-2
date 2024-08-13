@@ -18,10 +18,6 @@ body{
     font-family: "Inter", sans-serif;
     background-color: var(--background-primary);
 }
-main{
-    max-width: 1060px;
-    margin: 0 auto;
-}
 .btn-primary{
     font-size: 1.12rem;
     font-weight: 600;
@@ -30,6 +26,7 @@ main{
     border-radius: 42px;
     border: none;
     padding: 16px 40px;
+    width: 224px;
 
 }
 .primary-heading{
@@ -167,6 +164,10 @@ header{
 
 /* Habit section styles */
 
+.habits{
+    max-width: 1060px;
+    margin: 0 auto;
+}
 .habits h1, .habits p{
     text-align: center;
 }
@@ -194,13 +195,14 @@ header{
 /* Run section styles */
 
 .run{
+    max-width: 1060px;
+    margin: 100px auto;
     display: flex;
     align-items: center;
     background-color: rgb(34, 34, 34);
     border-radius: 18px;
     padding: 30px;
     gap: 165px;
-    margin: 100px 0;
 
 }
 .run img{
@@ -214,15 +216,87 @@ header{
     margin-top: 14px;
     margin-bottom: 34px;
 }
-.run-content button{
-    width: 224px;
-}
 .run-content{
     margin-left: 22px;
 }
 
+/* BMI calculator section styles */
+
+.bmi-calc-heading{
+    text-align: center;
+    margin-bottom: 88px;
+}
+.calc-container{
+    background-color: rgb(34, 34, 34);
+    padding-top: 49px;
+    padding-bottom: 55px;
+}
+.calc-info{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.bmi-chart{
+    width: 50%;
+}
+.bmi-heading{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--primary-color);  
+}
+th{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: left;
+}
+td{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--primary-color-2);
+}
+th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 151px;
+    height: 42px;
+    padding-left: 20px;
+}
+table{
+    border-collapse: collapse;
+    margin-top: 52px;
+}
+.bmi-form p{
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.bmi-form-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.input-field{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: none;
+    padding: 13px 20px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    flex: 1;
+}
+#bmi-submit{
+    margin-top: 34px;
+}
 /* Our team styles */
 
+.our-team{
+    max-width: 1060px;
+    margin: 88px auto;
+}
 .our-team h1, .our-team p{
     text-align: center;
 }
@@ -269,7 +343,6 @@ header{
 /* Footer section styles */
 
 footer{
-    margin-top: 88px;
     background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-details h1{
