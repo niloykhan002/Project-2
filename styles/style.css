@@ -119,6 +119,8 @@ header{
 .miama-font{
     font-family: 'Miama', sans-serif;
     font-weight: 400;
+    font-size: 10rem;
+    line-height: 5px;
 }
 .banner-content p{
     font-size: 1rem;
@@ -206,6 +208,12 @@ header{
     }
     .banner-btn button{
         padding: 16px 18px;
+    }
+    .banner-content h2{
+        font-size: 3.8rem;
+    }
+    .miama-font{
+        font-size: 8rem;
     }
 }
 /* Habit section styles */
@@ -510,6 +518,7 @@ table{
     .team-photo{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
+        justify-items: center;
         margin-top: 37px;
     }
 }
