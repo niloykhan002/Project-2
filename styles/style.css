@@ -204,6 +204,9 @@ header{
         top: 47px;
         left: 194px;
     }
+    .banner-btn button{
+        padding: 16px 18px;
+    }
 }
 /* Habit section styles */
 
@@ -217,6 +220,7 @@ header{
 .all-habits{
     display: flex;
     gap: 40px;
+    justify-content: space-between;
 }
 .habit h4{
     font-size: 1.12rem;
@@ -232,7 +236,7 @@ header{
 .habit{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 /* Habit section responsive */
@@ -243,6 +247,10 @@ header{
     }
     .all-habits{
         flex-direction: column;
+        gap: 20px;
+    }
+    .habit img{
+        margin: 20px 0;
     }
 }
 /* Run section styles */
@@ -271,7 +279,6 @@ header{
 }
 .run-content{
     margin-left: 22px;
-    text-align: justify;
 }
 
 /* Run section responsive */
@@ -283,6 +290,13 @@ header{
         gap: 31px;
     }
     .run img{
+        width: 100%;
+    }
+    .run-content{
+        margin-left: 0;
+    }
+    .run-content button{
+        justify-items: center;
         width: 100%;
     }
 }
@@ -362,12 +376,19 @@ table{
 /* Bmi calculator responsive styles */
 
 @media screen and (max-width: 576px) {
+    .bmi-calc-heading{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .calc-info{
         flex-direction: column;
         gap: 42px;
         margin: 0 20px;
     }
     .bmi-chart{
+        width: 100%;
+    }
+    table{
         width: 100%;
     }
     .bmi-form-container{
@@ -394,6 +415,9 @@ table{
     border-radius: 18px;
     padding: 20px;
     margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
 .member{
     width: 325px;
@@ -423,12 +447,19 @@ table{
     color: var(--primary-color-2);
     margin-top: 4px;
 }
-.team-photo{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-}
 
+/* Our Team responsive styles */
+
+@media screen and (max-width: 576px) {
+    .our-team{
+        margin: 66px 20px;
+    }
+    .team-photo{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        margin-top: 37px;
+    }
+}
 /* Footer section styles */
 
 footer{
@@ -476,4 +507,14 @@ hr{
         padding: 35px 0;
 }
 
+/* Footer responsive */
+@media screen and (max-width: 576px) {
+    footer{
+        padding: 0 20px;
+    }
+    .footer-content{
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }
+}
 
