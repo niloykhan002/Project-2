@@ -300,10 +300,63 @@ header{
         width: 100%;
     }
 }
+
+/* Eat healthy section styles */
+
+.eat-healthy{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.eat-healthy-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.eat-group{
+    display: flex;
+    gap: 100px;
+    background-color: rgb(34, 34, 34);
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+.eat-content h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color); 
+}
+.eat-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+}
+.eat-group img{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* Eat Healthy responsive */
+
+@media screen and (max-width: 576px) {
+    .eat-healthy{
+        margin: 20px;
+    }
+    .eat-group{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .eat-content{
+        align-items: center;
+    }
+}
 /* BMI calculator section styles */
 
 .bmi-calc-heading{
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 88px;
 }
 .calc-container{
